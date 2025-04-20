@@ -1,78 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    color: #ffffff;
 }
 body {
-    background: linear-gradient(0deg,rgba(68, 77, 77, 1) 49%, rgba(69, 61, 52, 1) 69%);
+    background-color: rgb(204, 204, 247);
 }
-.grid {
-    margin: 2.8vh;
-    gap: 1em;
+.container {
     display: grid;
-    height: 95vh;
-    grid-auto-rows: 178px;  
-    grid-auto-columns: 195.7px;
+    margin: 11px;
+    gap: 9px;
+    grid-auto-rows: 129px;
+    grid-auto-columns: 141px;
     grid-template-areas: 
-    "box1 box1 box2 box2 box3 box3 box4"
-    "box1 box1 box2 box2 box5 box5 box4"
-    "box6 box6 box6 box9 box9 box9 box7"
-    "box6 box6 box6 box9 box9 box9 box7";
+    "box1 box1 box1 box2 box2 box3 box3 box4 box4 box4"
+    "box1 box1 box1 box2 box2 box3 box3 box4 box4 box4"
+    "box5 box5 box5 box6 box6 box6 box6 box4 box4 box4"
+    "box5 box5 box5 box6 box6 box6 box6 box7 box7 box7"
+    "box8 box8 box8 box8 box9 box9 box9 box7 box7 box7"
+    "box8 box8 box8 box8 box9 box9 box9 box7 box7 box7"
+    ;
 }
-.item {
-    background-color: #424242;
-    border-radius: 10px;
+.box {
+    border-radius: 15px;
 }
 .box1 {
-    background-image: url(https://thumbs.dreamstime.com/b/explosion-colored-powder-carnival-party-black-color-mask-white-black-background-generative-ai-carnival-party-gold-black-mask-269579124.jpg);
+    background-image: url(https://scontent.fceb2-2.fna.fbcdn.net/v/t1.15752-9/490865582_1007594404309320_2980057345883078308_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGMnAxFlQGklwxZrxs7TUZXoQwAcn5Qg8ChDAByflCDwHdhHJMU5koVMJpS00xu7OrkMid18EP-OytVNYnSz2rv&_nc_ohc=P8zXZokgQogQ7kNvwGgMJ12&_nc_oc=Adlqvvvg58tHd6Cy51aOiHjd2Wf6Ra_HDDHIuTB83xwuE7CQIsQYCg_iPiL9pdCk5DJIz-RcISVX5TYrLtj0W2Ys&_nc_zt=23&_nc_ht=scontent.fceb2-2.fna&oh=03_Q7cD2AHUr2p3ISKVMSYOtA8C_FtwLRgNSVwGDSxhgW5QQCuhJg&oe=682C5DB6);
     background-size: 100% 100%;
 }
 .box2 {
-    background-image: url(https://i.pinimg.com/736x/60/ee/4b/60ee4b7ab6438c23481acac1b2775b99.jpg);
+    background-image: url(https://storage.buzzsprout.com/mi6bby20m2ynets2akj06c02lr2o?.jpg);
     background-size: 100% 100%;
 }
-h2 {
-    font-size: 120px;
-    margin-left: 310px;
-}
 .box3 {
-    background-image: url(https://img.freepik.com/premium-vector/black-background-with-logo-that-says-ai-artificial-intelligence_125452-3727.jpg);
+    background-image: url(https://scontent.fceb2-1.fna.fbcdn.net/v/t1.15752-9/491007459_2125440037877732_7914880655060202767_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEtOtEwuDp9DBRASx1IrzR9zR-lwjMtpUXNH6XCMy2lRdKXpf2WwP8OT4GKjStiqUPmjctBb7MQvxRP6tmtwzL6&_nc_ohc=ND6fKjRFyS4Q7kNvwFzKCTv&_nc_oc=Adnwl3AhZ5h242qEuHiiKBPEEu3SxHGLwrkx2ao1S8-QHORZKXwwkc3HRi0GA8RdjKh_vb_oi3frlo-ns8Rwv28n&_nc_zt=23&_nc_ht=scontent.fceb2-1.fna&oh=03_Q7cD2AGp75kPwU6lcs5yEC-YUYyRHX4IJysLC_skSA1lkzveMg&oe=682C5C44);
     background-size: 100% 100%;
 }
 .box4 {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9d3vrUYIiQeKwmLQN7XvILyeRadNkdJ-2xw&s);
+    background-image: url(https://scontent.fceb6-1.fna.fbcdn.net/v/t1.15752-9/491023865_568632949582612_7509643979859938777_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGXx-iuIFdlPtetTxvu5jJYNVY5Iosr2N81VjkiiyvY306_CpGUqpSCBwLQePJ17VntXGNnAiBbYjiFxjYcyF_x&_nc_ohc=mUZALUl0WFwQ7kNvwHQKpMK&_nc_oc=AdnehHUonmQ2k5BWFP6wwyVMxY4JTNiQMD7dfjkhe2nTzxMiNZIl6qINIe0Agfr7WyugNsJkR9B_W3n9V8LFar1U&_nc_zt=23&_nc_ht=scontent.fceb6-1.fna&oh=03_Q7cD2AH3hA730N8PQ5RPjQwm-WuJWol8x6zPw0Wn381DDtKWxQ&oe=682C5836);
     background-size: 100% 100%;
 }
 .box5 {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/054/477/207/non_2x/a-robot-hand-touching-the-ai-button-on-a-black-background-photo.jpg);
+    background-image: url(https://scontent.fmnl4-7.fna.fbcdn.net/v/t1.15752-9/491037168_974460571397447_5469636112334150332_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFlwGdFMUV2xHn9IZXzzQ9zTkYXDtOBupZORhcO04G6lrLffEaGtXZzNs3wMyKvagJJJqDYvpEdMi-X7lARVHsH&_nc_ohc=903wlsLt__MQ7kNvwEuIPI4&_nc_oc=Adn7BpemBobmtPe3yVRP35q2XWMXDb3Qn48OLyjjCWu2f2zp7Qsfc7KYtsMCyouxE1rxso-ewQdCM-mdhne-1kNA&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&oh=03_Q7cD2AEwgIPj_zBQ8gETjEee8wP93-yIxEuSu0GmwvyPsiHzlA&oe=682C3CF0);
     background-size: 100% 100%;
 }
 .box6 {
-    background-image: url(https://img.freepik.com/premium-photo/artificial-intelligence-scattering-head-profile-chromeplated-robot-black-background-ai-generated_868611-1860.jpg);
-    background-size: 100% 100%;
-}
-.box6 h1 {
-    font-size: 55px;
-    margin-top: 50px;
-    margin-left: 60px;
-
+    background-image: url(https://themartechsummit.com/wp-content/uploads/2022/11/Techsun.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 550px 560px;
+    background-color: white;
 }
 .box7 {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPf1ROtTww2c3Dt0m-c17AccECvwHmtY4KbAJ4QlNQAdESdI-knGs_Rd0caxQhCHQVnOE&usqp=CAU);
+    background-image: url(https://scontent.fceb2-2.fna.fbcdn.net/v/t1.15752-9/491021811_2175370272916144_9130195099474677754_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGOqwUnl0NSYu3Ix5Hre26f-taLwzib-zn61ovDOJv7Obf0oURZ9mhy5dKrf4I6p_H9vLt_3U5ysv6qN9fsipQ1&_nc_ohc=6ak_9OTTpKAQ7kNvwHh4oaq&_nc_oc=Adm2Tv3JnNt_4YuP1qM6A2QLnxIrD4h0CCB_OCuAmiub6hXycscJ9MLKH3k8fBMcbTOCWde0oSnyVYHeg0Y2psa6&_nc_zt=23&_nc_ht=scontent.fceb2-2.fna&oh=03_Q7cD2AHS9NsZC9xrm0SL2X77jD6NRjwEujOdywbaDs0t-KGgqg&oe=682C2DF2);
     background-size: 100% 100%;
 }
-.box9 {
-    background-image: url(https://img.freepik.com/premium-photo/close-up-contrasting-black-white-robots-look-each-other-solid-black-background_955712-14680.jpg );
+.box8 {
     background-size: 100% 100%;
-}p {
-    text-align: center;
-    font-size: 45px;
-    margin-top: 60px;
-    color: #eb2121;
+    background-image: url(https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/490300814_1100228925158369_4046062840483874766_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFxmfR_BK_P2OqHU_qSqnHdeR52FrAaL3J5HnYWsBovcgPjA7DSdD_1HRKzZegfDi26elNgQXXbkBm4WfcJoqla&_nc_ohc=xe-sk_XGqWoQ7kNvwGUDEUG&_nc_oc=AdnRL_YtDd0b3wRom10IEabV35HDP3VxwTeSMgY3PoMIzP161aLx5bOFxRdnR0BMmUaGpbpyXWwzhUl43fyWm1wc&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&oh=03_Q7cD2AHVHU7dfe8ahmm3qMCbNOuSOYtjbs5CluXSJ5eP2YzP1Q&oe=682C35F8);
+}
+.box9 {
+    background-size: 100% 100%;
+    background-image: url(https://scontent.fceb2-2.fna.fbcdn.net/v/t1.15752-9/491083548_695680236163314_5095057196353065118_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHq2hdiFShlEiTyfN_E7p7KCDcyxHE8c8kINzLEcTxzyUrJWKOjhmLHIH27h16LdAe39WoOpPqUai9RaxvQcGbI&_nc_ohc=mXIQmk6oIFMQ7kNvwHy8Jh3&_nc_oc=Adm0SkYJkuBi683EmrRwNV6WRujpoKCNAX-MfzXYMfxkpJsYN6iPrBNI6PqjLd4ld1zMDgowayFkJoAF5qrdkavD&_nc_zt=23&_nc_ht=scontent.fceb2-2.fna&oh=03_Q7cD2AHZUJeB9h1Rmq6jcXy6lxXiwZ2qh5YE97GVTcVRonQIRQ&oe=682C4D17);
 }
