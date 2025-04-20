@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+}
+body {
+    background: linear-gradient(0deg,rgba(68, 77, 77, 1) 49%, rgba(69, 61, 52, 1) 69%);
+}
+.grid {
+    margin: 2.8vh;
+    gap: 1em;
+    display: grid;
+    height: 95vh;
+    grid-auto-rows: 178px;  
+    grid-auto-columns: 195.7px;
+    grid-template-areas: 
+    "box1 box1 box2 box2 box3 box3 box4"
+    "box1 box1 box2 box2 box5 box5 box4"
+    "box6 box6 box6 box9 box9 box9 box7"
+    "box6 box6 box6 box9 box9 box9 box7";
+}
+.item {
+    background-color: #424242;
+    border-radius: 10px;
+}
+.box1 {
+    background-image: url(https://thumbs.dreamstime.com/b/explosion-colored-powder-carnival-party-black-color-mask-white-black-background-generative-ai-carnival-party-gold-black-mask-269579124.jpg);
+    background-size: 100% 100%;
+}
+.box2 {
+    background-image: url(https://i.pinimg.com/736x/60/ee/4b/60ee4b7ab6438c23481acac1b2775b99.jpg);
+    background-size: 100% 100%;
+}
+h2 {
+    font-size: 120px;
+    margin-left: 310px;
+}
+.box3 {
+    background-image: url(https://img.freepik.com/premium-vector/black-background-with-logo-that-says-ai-artificial-intelligence_125452-3727.jpg);
+    background-size: 100% 100%;
+}
+.box4 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9d3vrUYIiQeKwmLQN7XvILyeRadNkdJ-2xw&s);
+    background-size: 100% 100%;
+}
+.box5 {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/054/477/207/non_2x/a-robot-hand-touching-the-ai-button-on-a-black-background-photo.jpg);
+    background-size: 100% 100%;
+}
+.box6 {
+    background-image: url(https://img.freepik.com/premium-photo/artificial-intelligence-scattering-head-profile-chromeplated-robot-black-background-ai-generated_868611-1860.jpg);
+    background-size: 100% 100%;
+}
+.box6 h1 {
+    font-size: 55px;
+    margin-top: 50px;
+    margin-left: 60px;
+
+}
+.box7 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPf1ROtTww2c3Dt0m-c17AccECvwHmtY4KbAJ4QlNQAdESdI-knGs_Rd0caxQhCHQVnOE&usqp=CAU);
+    background-size: 100% 100%;
+}
+.box9 {
+    background-image: url(https://img.freepik.com/premium-photo/close-up-contrasting-black-white-robots-look-each-other-solid-black-background_955712-14680.jpg );
+    background-size: 100% 100%;
+}p {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 60px;
+    color: #eb2121;
+}
